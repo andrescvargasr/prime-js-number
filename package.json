@@ -1,0 +1,43 @@
+{
+  "name": "prime-js-number",
+  "version": "0.0.0",
+  "description": "Find if a number is a prime number or not",
+  "main": "lib/index.js",
+  "module": "src/index.js",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "eslint": "eslint src",
+    "eslint-fix": "npm run eslint -- --fix",
+    "prepack": "rollup -c",
+    "prettier": "prettier --check src",
+    "prettier-write": "prettier --write src",
+    "test": "npm run test-only && npm run eslint && npm run prettier",
+    "test-only": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrescvargasr/prime-js-number.git"
+  },
+  "keywords": [],
+  "author": "andrescvargasr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrescvargasr/prime-js-number/issues"
+  },
+  "homepage": "https://github.com/andrescvargasr/prime-js-number#readme",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.16.5",
+    "@types/jest": "^27.4.0",
+    "eslint": "^8.5.0",
+    "eslint-config-cheminfo": "^7.2.1",
+    "jest": "^27.4.5",
+    "prettier": "^2.5.1",
+    "rollup": "^2.62.0"
+  }
+}
