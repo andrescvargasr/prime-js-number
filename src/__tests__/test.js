@@ -1,7 +1,7 @@
-import { myModule } from '..';
+import { isPrimeNumber } from '..';
 
 describe('test myModule', () => {
   it('should return 42', () => {
-    expect(myModule(2)).toStrictEqual(true);
+    expect(isPrimeNumber(2)).toStrictEqual(true);
   });
 });
